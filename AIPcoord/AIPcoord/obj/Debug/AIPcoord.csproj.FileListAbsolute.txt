@@ -18,3 +18,13 @@ C:\Users\donatus\Google Drive\IVAO\IVAC2\DataPrep\tools\AIPcoord\AIPcoord\obj\De
 C:\Users\donatus\Google Drive\IVAO\IVAC2\DataPrep\tools\AIPcoord\AIPcoord\bin\Debug\AIPcoord.exe.config
 C:\Users\donatus\Google Drive\IVAO\IVAC2\DataPrep\tools\AIPcoord\AIPcoord\bin\Debug\AIPcoord.exe
 C:\Users\donatus\Google Drive\IVAO\IVAC2\DataPrep\tools\AIPcoord\AIPcoord\bin\Debug\AIPcoord.pdb
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\bin\Debug\AIPcoord.exe.config
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\bin\Debug\AIPcoord.exe
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\bin\Debug\AIPcoord.pdb
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.csprojResolveAssemblyReference.cache
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.frmMain.resources
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.Properties.Resources.resources
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.csproj.GenerateResource.cache
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.csproj.CoreCompileInputs.cache
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.exe
+C:\Users\donatus\Google Drive\IVAO\_dev\ivao-aipcoord\AIPcoord\AIPcoord\obj\Debug\AIPcoord.pdb
