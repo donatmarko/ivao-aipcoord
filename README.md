@@ -1,5 +1,5 @@
 # ivao-aipcoord
-> A simple C# tool to convert airspace coordinates from eAIP to IVAO IvAc and WebEye, and T2:Radar (IVAC2)
+> A simple C# tool to convert airspace coordinates from eAIP to IVAO IvAc, WebEye & IVAC2
 
 ## "I just wanna download and use it"
 Although you can simply clone the Git repository and compile the source, I made the downloadable executable available (lots of '*able*'s) separately:
