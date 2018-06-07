@@ -3,7 +3,7 @@
 
 ## "I just wanna download and use it"
 Although you can simply clone the Git repository and compile the source, I made the downloadable executable available (lots of '*able*'s) separately:
-**https://donatus.hu/files/aipcoord.zip**
+**https://static.donatus.hu/files/aipcoord.zip**
 
 
 ## What is it?
