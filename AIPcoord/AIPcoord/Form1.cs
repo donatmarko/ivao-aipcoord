@@ -76,27 +76,59 @@ namespace AIPcoord
                 while (list.Contains(string.Empty))
                     list.Remove(string.Empty);
 
-                // removing duplicate spaces
                 for (lineId = 0; lineId < list.Count; lineId++)
                 {
+                    // removing duplicate spaces
                     while (list[lineId].Contains("  "))
                         list[lineId] = list[lineId].Replace("  ", " ");
+
+                    // removing trailing and leading spaces
+                    list[lineId] = list[lineId].Trim();
                 }
 
                 // integrity-check - whether contains N/S and E/W or not, and whether contains exactly 1 space
                 for (lineId = 0; lineId < list.Count; lineId++)
                 {
+                    // if not a comment
                     if (!list[lineId].StartsWith(";"))
                     {
+                        // if contains more than 1 spaces
                         if (numberOfChar(' ', list[lineId]) > 1)
                         {
-                            var array = list[lineId].Split(' ');
-                            list[lineId] = string.Format("{0} {1}", array[0], array[1]);
+                            // 3 spaces = ordinary line, 4 spaces = GEO or ARTCC line without its name/color being removed
+                            if (numberOfChar(' ', list[lineId]) == 3 || numberOfChar(' ', list[lineId]) == 4)
+                            {
+                                // IvAc 1 format
+                                var array = list[lineId].Split(' ').ToList();
 
-                            string newline = "";
-                            for (int j = 2; j < array.Length; j++)
-                                newline += (newline.Length > 0 ? ' ' + array[j] : "; " + array[j]);
-                            list.Insert(lineId + 1, newline);
+                                // if the first "word" is not coordinate block, remove it
+                                // most likely it's a line from the ARTCC segment then
+                                if (!array[0].Contains('N') && !array[0].Contains('S'))
+                                    array.RemoveAt(0);
+
+                                string lat1 = array[0];
+                                string lon1 = array[1];
+                                string lat2 = array[2];
+                                string lon2 = array[3];
+
+                                // using the first blocks only
+                                list[lineId] = string.Format("{0} {1}", lat1, lon1);
+
+                                // if it's the last line, adding the second block to the end of the list
+                                if (list.Count == lineId + 1)
+                                    list.Add(string.Format("{0} {1}", lat2, lon2));
+                            }
+                            else
+                            {
+                                // again something which needs to be commented out
+                                var array = list[lineId].Split(' ');
+                                list[lineId] = string.Format("{0} {1}", array[0], array[1]);
+
+                                string newline = "";
+                                for (int j = 2; j < array.Length; j++)
+                                    newline += (newline.Length > 0 ? ' ' + array[j] : "; " + array[j]);
+                                list.Insert(lineId + 1, newline);
+                            }
                         }
 
                         if (numberOfChar(' ', list[lineId]) == 0 && list[lineId].Length > 0)
@@ -104,8 +136,7 @@ namespace AIPcoord
 
                         if (numberOfChar(' ', list[lineId]) == 1)
                         {
-                            // removing dots - dots are exist if it's an IvAc1 coordinate-pair
-                            var array = list[lineId].Replace(".", "").Split(' ');
+                            var array = list[lineId].Split(' ');
                             if ((array[0].Contains('N') || array[0].Contains('S')) && (array[1].Contains('E') || array[1].Contains('W')))
                             {
                                 // so far so good - looks like it's a valid coordinate-pair
