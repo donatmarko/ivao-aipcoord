@@ -1,10 +1,7 @@
-# ivao-aipcoord
-> A simple C# tool to convert airspace coordinates from eAIP to IVAO IvAc, WebEye & Terminal2 Solutions IVAC2
+# IVAO-AIPcoord
+A simple C# tool to convert airspace coordinates from eAIP to IVAO IvAc, WebEye & Terminal2 Solutions IVAC2
 
-## "I just wanna download and use it"
-Head over to **Releases** page and pick the latest version in EXE format:
-**https://github.com/donatmarko/ivao-aipcoord/releases**
-
+[![Build Status](https://travis-ci.org/donatmarko/ivao-aipcoord.svg?branch=master)](https://travis-ci.org/donatmarko/ivao-aipcoord) [![](https://img.shields.io/github/downloads/donatmarko/ivao-aipcoord/total.svg)](https://github.com/donatmarko/ivao-aipcoord/releases) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
 ## What is it?
 This tool has been created in a few hours to make my life easier while converting path/shape coordinates from eAIP to IVAC2. Later on I added the feature to support IvAc1 and WebEye formats as output.   
