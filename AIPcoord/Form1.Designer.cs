@@ -48,7 +48,7 @@
             this.txt_webeye = new System.Windows.Forms.TextBox();
             this.btn_webeye = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_help = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_tabs)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -62,7 +62,7 @@
             this.txt_aip.Multiline = true;
             this.txt_aip.Name = "txt_aip";
             this.txt_aip.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_aip.Size = new System.Drawing.Size(363, 296);
+            this.txt_aip.Size = new System.Drawing.Size(363, 491);
             this.txt_aip.TabIndex = 0;
             // 
             // label4
@@ -90,7 +90,7 @@
             this.groupBox1.Controls.Add(this.txt_ivac2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.num_tabs);
-            this.groupBox1.Location = new System.Drawing.Point(381, 5);
+            this.groupBox1.Location = new System.Drawing.Point(383, 201);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(448, 189);
             this.groupBox1.TabIndex = 17;
@@ -139,13 +139,12 @@
             this.groupBox2.Controls.Add(this.rad_26);
             this.groupBox2.Controls.Add(this.rad_11);
             this.groupBox2.Controls.Add(this.rad_0);
-            this.groupBox2.Location = new System.Drawing.Point(835, 164);
+            this.groupBox2.Location = new System.Drawing.Point(381, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(448, 192);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "IvAc 1 line segments";
-            this.groupBox2.Visible = false;
             // 
             // txt_ivac1
             // 
@@ -231,13 +230,12 @@
             this.btn_ivac1.TabIndex = 19;
             this.btn_ivac1.Text = "IvAc 1";
             this.btn_ivac1.UseVisualStyleBackColor = true;
-            this.btn_ivac1.Visible = false;
-            this.btn_ivac1.Click += new System.EventHandler(this.btn_ivac1_Click_1);
+            this.btn_ivac1.Click += new System.EventHandler(this.btn_ivac1_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txt_webeye);
-            this.groupBox3.Location = new System.Drawing.Point(381, 200);
+            this.groupBox3.Location = new System.Drawing.Point(383, 396);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(448, 166);
             this.groupBox3.TabIndex = 24;
@@ -264,11 +262,11 @@
             this.btn_webeye.TabIndex = 25;
             this.btn_webeye.Text = "WebEye";
             this.btn_webeye.UseVisualStyleBackColor = true;
-            this.btn_webeye.Click += new System.EventHandler(this.button1_Click);
+            this.btn_webeye.Click += new System.EventHandler(this.btn_webeye_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 334);
+            this.textBox1.Location = new System.Drawing.Point(12, 529);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -277,23 +275,23 @@
             this.textBox1.Text = "Copyright (c) 2018 www.donatus.hu\r\ncreated by Donat Marko (VID: 540147) donat.mar" +
     "ko@ivao.aero";
             // 
-            // button1
+            // btn_help
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(337, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 33);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "?";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_help.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_help.Location = new System.Drawing.Point(337, 529);
+            this.btn_help.Name = "btn_help";
+            this.btn_help.Size = new System.Drawing.Size(38, 33);
+            this.btn_help.TabIndex = 28;
+            this.btn_help.Text = "?";
+            this.btn_help.UseVisualStyleBackColor = true;
+            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 378);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(844, 570);
+            this.Controls.Add(this.btn_help);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_webeye);
             this.Controls.Add(this.groupBox3);
@@ -341,7 +339,7 @@
         private System.Windows.Forms.TextBox txt_webeye;
         private System.Windows.Forms.Button btn_webeye;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_help;
     }
 }
 
