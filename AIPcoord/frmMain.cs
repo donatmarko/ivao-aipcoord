@@ -272,18 +272,24 @@ namespace AIPcoord
                     }
                     else if (typ == OutputType.Aurora)
                     {
-                        if (rad_dms_14.Checked)
-                        {
-                            txt_aurora.AppendText(clist[i].ToString("AURORA_DMS14") + Environment.NewLine);
-                        }
-                        else if (rad_dms_11.Checked)
-                        {
-                            txt_aurora.AppendText(clist[i].ToString("AURORA_DMS11") + Environment.NewLine);
-                        }
+                        string format = "AURORA_DMS14";
+                        if (rad_dms_11.Checked)
+                            format = "AURORA_DMS11";
                         else if (rad_decimal.Checked)
+                            format = "AURORA_DEC";
+
+                        string s = string.Empty;
+                        if (!chk_linesegments.Checked || clist.Count == 1)
                         {
-                            txt_aurora.AppendText(clist[i].ToString("AURORA_DEC") + Environment.NewLine);
+                            // single point given or user wants point list
+                            s = s + clist[i].ToString(format);
                         }
+                        else if (clist.Count > i + 1)
+                        {
+                            // user wants line segment list
+                            s = s + string.Format("{0}{1}", clist[i].ToString(format), clist[i + 1].ToString(format));
+                        }
+                        txt_aurora.AppendText(s + Environment.NewLine);
                     }
                 }
 

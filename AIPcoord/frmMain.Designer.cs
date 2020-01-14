@@ -56,6 +56,7 @@
             this.rad_dms_11 = new System.Windows.Forms.RadioButton();
             this.rad_dms_14 = new System.Windows.Forms.RadioButton();
             this.btn_aurora = new System.Windows.Forms.Button();
+            this.chk_linesegments = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_tabs)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -299,6 +300,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.chk_linesegments);
             this.groupBox4.Controls.Add(this.txt_aurora);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.rad_decimal);
@@ -309,7 +311,7 @@
             this.groupBox4.Size = new System.Drawing.Size(446, 158);
             this.groupBox4.TabIndex = 29;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Aurora ATC Client point list";
+            this.groupBox4.Text = "Aurora ATC Client point list / line segments";
             // 
             // txt_aurora
             // 
@@ -374,6 +376,16 @@
             this.btn_aurora.Text = ">>";
             this.btn_aurora.UseVisualStyleBackColor = true;
             this.btn_aurora.Click += new System.EventHandler(this.btn_ivac3_Click);
+            // 
+            // chk_linesegments
+            // 
+            this.chk_linesegments.AutoSize = true;
+            this.chk_linesegments.Location = new System.Drawing.Point(343, 19);
+            this.chk_linesegments.Name = "chk_linesegments";
+            this.chk_linesegments.Size = new System.Drawing.Size(94, 17);
+            this.chk_linesegments.TabIndex = 24;
+            this.chk_linesegments.Text = "Line segments";
+            this.chk_linesegments.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -440,6 +452,7 @@
         private System.Windows.Forms.RadioButton rad_dms_11;
         private System.Windows.Forms.RadioButton rad_dms_14;
         private System.Windows.Forms.Button btn_aurora;
+        private System.Windows.Forms.CheckBox chk_linesegments;
     }
 }
 
