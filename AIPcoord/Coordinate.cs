@@ -265,7 +265,31 @@ namespace AIPcoord
                     break;
 
                 case "WEBEYE":
-                    sb.AppendFormat(fi, "{0}:{1}", Math.Round(Latitude, 2), Math.Round(Longitude, 2));
+                    sb.AppendFormat(fi, "{0}:{1}", Math.Round(Latitude, 6), Math.Round(Longitude, 6));
+                    break;
+
+                case "AURORA_DMS14":
+                    this.GetDMS(out latDeg, out latMin, out latSec, out north, out lonDeg, out lonMin, out lonSec, out east);
+                    latSecInt = (int)latSec;
+                    latSecDec = (int)((latSec - latSecInt) * 1000);
+                    lonSecInt = (int)lonSec;
+                    lonSecDec = (int)((lonSec - lonSecInt) * 1000);
+
+                    sb.AppendFormat(fi, "{4}{0:000}.{1:00}.{2:00}.{3:000};{9}{5:000}.{6:00}.{7:00}.{8:000};", latDeg, latMin, latSecInt, latSecDec, (north ? "N" : "S"), lonDeg, lonMin, lonSecInt, lonSecDec, (east ? "E" : "W"));
+                    break;
+
+                case "AURORA_DMS11":
+                    this.GetDMS(out latDeg, out latMin, out latSec, out north, out lonDeg, out lonMin, out lonSec, out east);
+                    latSecInt = (int)latSec;
+                    latSecDec = (int)((latSec - latSecInt) * 1000);
+                    lonSecInt = (int)lonSec;
+                    lonSecDec = (int)((lonSec - lonSecInt) * 1000);
+
+                    sb.AppendFormat(fi, "{4}{0:000}{1:00}{2:00}{3:000};{9}{5:000}{6:00}{7:00}{8:000};", latDeg, latMin, latSecInt, latSecDec, (north ? "N" : "S"), lonDeg, lonMin, lonSecInt, lonSecDec, (east ? "E" : "W"));
+                    break;
+
+                case "AURORA_DEC":
+                    sb.AppendFormat(fi, "{0};{1};", Math.Round(Latitude, 8), Math.Round(Longitude, 8));
                     break;
 
                 case "D":

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AIPcoord")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Donat Marko")]
+[assembly: AssemblyCompany("Donat Marko - www.donatus.hu")]
 [assembly: AssemblyProduct("AIPcoord")]
-[assembly: AssemblyCopyright("Copyright © www.donatus.hu 2018")]
+[assembly: AssemblyCopyright("Copyright © Donat Marko, 2020.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
