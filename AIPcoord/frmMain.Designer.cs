@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_aip = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_ivac2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_ivac2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.num_tabs = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_ivac1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_color = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,34 +42,27 @@
             this.rad_0 = new System.Windows.Forms.RadioButton();
             this.btn_ivac1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_webeye = new System.Windows.Forms.TextBox();
             this.btn_webeye = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_help = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txt_aurora = new System.Windows.Forms.TextBox();
+            this.chk_linesegments = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.rad_decimal = new System.Windows.Forms.RadioButton();
             this.rad_dms_11 = new System.Windows.Forms.RadioButton();
             this.rad_dms_14 = new System.Windows.Forms.RadioButton();
             this.btn_aurora = new System.Windows.Forms.Button();
-            this.chk_linesegments = new System.Windows.Forms.CheckBox();
+            this.txt_ivac1 = new System.Windows.Forms.RichTextBox();
+            this.txt_aip = new System.Windows.Forms.RichTextBox();
+            this.txt_ivac2 = new System.Windows.Forms.RichTextBox();
+            this.txt_webeye = new System.Windows.Forms.RichTextBox();
+            this.txt_aurora = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_tabs)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txt_aip
-            // 
-            this.txt_aip.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_aip.Location = new System.Drawing.Point(12, 32);
-            this.txt_aip.Multiline = true;
-            this.txt_aip.Name = "txt_aip";
-            this.txt_aip.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_aip.Size = new System.Drawing.Size(363, 552);
-            this.txt_aip.TabIndex = 0;
             // 
             // label4
             // 
@@ -106,18 +96,6 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IVAC2 point list for <path> element";
-            // 
-            // txt_ivac2
-            // 
-            this.txt_ivac2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_ivac2.Location = new System.Drawing.Point(6, 38);
-            this.txt_ivac2.Multiline = true;
-            this.txt_ivac2.Name = "txt_ivac2";
-            this.txt_ivac2.ReadOnly = true;
-            this.txt_ivac2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_ivac2.Size = new System.Drawing.Size(431, 108);
-            this.txt_ivac2.TabIndex = 8;
-            this.txt_ivac2.WordWrap = false;
             // 
             // label2
             // 
@@ -155,18 +133,6 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "IvAc 1 line segments";
-            // 
-            // txt_ivac1
-            // 
-            this.txt_ivac1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_ivac1.Location = new System.Drawing.Point(9, 44);
-            this.txt_ivac1.Multiline = true;
-            this.txt_ivac1.Name = "txt_ivac1";
-            this.txt_ivac1.ReadOnly = true;
-            this.txt_ivac1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_ivac1.Size = new System.Drawing.Size(428, 108);
-            this.txt_ivac1.TabIndex = 23;
-            this.txt_ivac1.WordWrap = false;
             // 
             // label6
             // 
@@ -253,18 +219,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "WebEye (The Eye, DLMN, etc.) shape";
             // 
-            // txt_webeye
-            // 
-            this.txt_webeye.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_webeye.Location = new System.Drawing.Point(6, 19);
-            this.txt_webeye.Multiline = true;
-            this.txt_webeye.Name = "txt_webeye";
-            this.txt_webeye.ReadOnly = true;
-            this.txt_webeye.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_webeye.Size = new System.Drawing.Size(431, 108);
-            this.txt_webeye.TabIndex = 23;
-            this.txt_webeye.WordWrap = false;
-            // 
             // btn_webeye
             // 
             this.btn_webeye.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
@@ -284,7 +238,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(319, 33);
             this.textBox1.TabIndex = 26;
-            this.textBox1.Text = "Copyright (c) 2020 www.donatus.hu\r\ncreated by Donat Marko | software@donatus.hu\r\n" +
+            this.textBox1.Text = "Copyright (c) 2024 www.donatus.hu\r\ncreated by Donat Marko | software@donatus.hu\r\n" +
     "";
             // 
             // btn_help
@@ -300,8 +254,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.chk_linesegments);
             this.groupBox4.Controls.Add(this.txt_aurora);
+            this.groupBox4.Controls.Add(this.chk_linesegments);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.rad_decimal);
             this.groupBox4.Controls.Add(this.rad_dms_11);
@@ -313,17 +267,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Aurora ATC Client point list / line segments";
             // 
-            // txt_aurora
+            // chk_linesegments
             // 
-            this.txt_aurora.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_aurora.Location = new System.Drawing.Point(9, 44);
-            this.txt_aurora.Multiline = true;
-            this.txt_aurora.Name = "txt_aurora";
-            this.txt_aurora.ReadOnly = true;
-            this.txt_aurora.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_aurora.Size = new System.Drawing.Size(428, 108);
-            this.txt_aurora.TabIndex = 23;
-            this.txt_aurora.WordWrap = false;
+            this.chk_linesegments.AutoSize = true;
+            this.chk_linesegments.Location = new System.Drawing.Point(343, 19);
+            this.chk_linesegments.Name = "chk_linesegments";
+            this.chk_linesegments.Size = new System.Drawing.Size(94, 17);
+            this.chk_linesegments.TabIndex = 24;
+            this.chk_linesegments.Text = "Line segments";
+            this.chk_linesegments.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -377,21 +329,65 @@
             this.btn_aurora.UseVisualStyleBackColor = true;
             this.btn_aurora.Click += new System.EventHandler(this.btn_ivac3_Click);
             // 
-            // chk_linesegments
+            // txt_ivac1
             // 
-            this.chk_linesegments.AutoSize = true;
-            this.chk_linesegments.Location = new System.Drawing.Point(343, 19);
-            this.chk_linesegments.Name = "chk_linesegments";
-            this.chk_linesegments.Size = new System.Drawing.Size(94, 17);
-            this.chk_linesegments.TabIndex = 24;
-            this.chk_linesegments.Text = "Line segments";
-            this.chk_linesegments.UseVisualStyleBackColor = true;
+            this.txt_ivac1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txt_ivac1.Location = new System.Drawing.Point(11, 44);
+            this.txt_ivac1.Name = "txt_ivac1";
+            this.txt_ivac1.ReadOnly = true;
+            this.txt_ivac1.Size = new System.Drawing.Size(426, 108);
+            this.txt_ivac1.TabIndex = 23;
+            this.txt_ivac1.Text = "";
+            this.txt_ivac1.WordWrap = false;
+            // 
+            // txt_aip
+            // 
+            this.txt_aip.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txt_aip.Location = new System.Drawing.Point(12, 32);
+            this.txt_aip.Name = "txt_aip";
+            this.txt_aip.Size = new System.Drawing.Size(363, 552);
+            this.txt_aip.TabIndex = 31;
+            this.txt_aip.Text = "";
+            // 
+            // txt_ivac2
+            // 
+            this.txt_ivac2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txt_ivac2.Location = new System.Drawing.Point(11, 38);
+            this.txt_ivac2.Name = "txt_ivac2";
+            this.txt_ivac2.ReadOnly = true;
+            this.txt_ivac2.Size = new System.Drawing.Size(426, 108);
+            this.txt_ivac2.TabIndex = 24;
+            this.txt_ivac2.Text = "";
+            this.txt_ivac2.WordWrap = false;
+            // 
+            // txt_webeye
+            // 
+            this.txt_webeye.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txt_webeye.Location = new System.Drawing.Point(11, 19);
+            this.txt_webeye.Name = "txt_webeye";
+            this.txt_webeye.ReadOnly = true;
+            this.txt_webeye.Size = new System.Drawing.Size(426, 108);
+            this.txt_webeye.TabIndex = 24;
+            this.txt_webeye.Text = "";
+            this.txt_webeye.WordWrap = false;
+            // 
+            // txt_aurora
+            // 
+            this.txt_aurora.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txt_aurora.Location = new System.Drawing.Point(11, 42);
+            this.txt_aurora.Name = "txt_aurora";
+            this.txt_aurora.ReadOnly = true;
+            this.txt_aurora.Size = new System.Drawing.Size(426, 110);
+            this.txt_aurora.TabIndex = 25;
+            this.txt_aurora.Text = "";
+            this.txt_aurora.WordWrap = false;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 635);
+            this.Controls.Add(this.txt_aip);
             this.Controls.Add(this.btn_aurora);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btn_help);
@@ -403,7 +399,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_ivac2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_aip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmMain";
@@ -414,7 +409,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -423,16 +417,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_aip;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_ivac2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_ivac2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown num_tabs;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txt_ivac1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_color;
         private System.Windows.Forms.Label label5;
@@ -441,18 +431,21 @@
         private System.Windows.Forms.RadioButton rad_0;
         private System.Windows.Forms.Button btn_ivac1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txt_webeye;
         private System.Windows.Forms.Button btn_webeye;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_help;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txt_aurora;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton rad_decimal;
         private System.Windows.Forms.RadioButton rad_dms_11;
         private System.Windows.Forms.RadioButton rad_dms_14;
         private System.Windows.Forms.Button btn_aurora;
         private System.Windows.Forms.CheckBox chk_linesegments;
+        private System.Windows.Forms.RichTextBox txt_ivac1;
+        private System.Windows.Forms.RichTextBox txt_aip;
+        private System.Windows.Forms.RichTextBox txt_ivac2;
+        private System.Windows.Forms.RichTextBox txt_webeye;
+        private System.Windows.Forms.RichTextBox txt_aurora;
     }
 }
 

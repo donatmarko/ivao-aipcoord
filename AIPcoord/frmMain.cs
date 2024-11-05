@@ -177,7 +177,7 @@ namespace AIPcoord
                                 lat = lat.Substring(2, lat.Length - 2);
 
                                 if (lat.Length > 0)
-                                    latS = latS + Convert.ToDouble(lat) / 1000;
+                                    latS = latS + Convert.ToDouble(lat.PadRight(3, '0')) / 1000;
 
                                 // LONGITUDE
                                 lonD = Convert.ToDouble(lon.Substring(0, 3));
@@ -190,7 +190,7 @@ namespace AIPcoord
                                 lon = lon.Substring(2, lon.Length - 2);
 
                                 if (lon.Length > 0)
-                                    lonS = lonS + Convert.ToDouble(lon) / 1000;
+                                    lonS = lonS + Convert.ToDouble(lon.PadRight(3, '0')) / 1000;
 
                                 Coordinate c = new Coordinate();
                                 c.SetDMS(latD, latM, latS, north, lonD, lonM, lonS, east);
@@ -312,6 +312,7 @@ namespace AIPcoord
                         Clipboard.SetText(txt_aurora.Text);
                         break;
                 }
+                MessageBox.Show("Conversion completed, result has been copied to clipboard.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
